@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menú con Submenú</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#faf7fb;
+}
+
+/* MENU PRINCIPAL */
+
+nav{
+background:#cdb4db; /* lila suave */
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:15px 20px;
+color:#4a3f55;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#e8d7f1;
+}
+
+/* SUBMENU */
+
+nav ul li ul{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background:#f3e8ff; /* lila claro */
+min-width:120px;
+border-radius:6px;
+}
+
+nav ul li ul li a{
+padding:10px;
+color:#5c4b6b;
+}
+
+nav ul li ul li a:hover{
+background:#f8d7e6; /* rosa suave */
+}
+
+/* MOSTRAR SUBMENU */
+
+nav ul li:hover ul{
+display:block;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+}
+
+nav ul li ul{
+position:static;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<ul>
+
+<li>
+<a href="#">Menu 1</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Menu 2</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Menu 3</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Menu 4</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Menu 5</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Menu 6</a>
+<ul>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+
+</ul>
+</nav>
+
+</body>
+</html>
