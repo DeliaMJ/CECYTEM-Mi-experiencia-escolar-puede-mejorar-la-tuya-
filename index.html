@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Menú con Submenú</title>
+<title>Menu</title>
 
 <style>
 
@@ -18,7 +18,7 @@ background:#faf7fb;
 /* MENU PRINCIPAL */
 
 nav{
-background:#cdb4db; /* lila suave */
+background:#cdb4db;
 }
 
 nav ul{
@@ -36,7 +36,7 @@ position:relative;
 
 nav ul li a{
 display:block;
-padding:15px 20px;
+padding:22px 20px; /* barra más gruesa */
 color:#4a3f55;
 text-decoration:none;
 font-weight:bold;
@@ -53,21 +53,9 @@ display:none;
 position:absolute;
 top:100%;
 left:0;
-background:#f3e8ff; /* lila claro */
+background:#f3e8ff;
 min-width:120px;
-border-radius:6px;
 }
-
-nav ul li ul li a{
-padding:10px;
-color:#5c4b6b;
-}
-
-nav ul li ul li a:hover{
-background:#f8d7e6; /* rosa suave */
-}
-
-/* MOSTRAR SUBMENU */
 
 nav ul li:hover ul{
 display:block;
