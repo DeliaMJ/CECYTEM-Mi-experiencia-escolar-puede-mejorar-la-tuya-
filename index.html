@@ -1,41 +1,233 @@
-<li>
-<a href="menu1.html">¿Por qué ocurre el abandono escolar?</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mi experiencia escolar</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#fff1f8;
+overflow-x:hidden;
+}
+
+/* TITULO ARRIBA (COMBINADO CON MENU) */
+
+.titulo-principal{
+background:#cdb4db;
+text-align:center;
+padding:15px 10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-principal h1{
+margin:0;
+color:#4a3f55;
+font-size:26px;
+font-weight:bold;
+}
+
+/* MENU PRINCIPAL */
+
+nav{
+background:#cdb4db;
+border-top:1px solid #bfa6d6;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:25px 28px;
+color:#4a3f55;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+}
+
+nav ul li a:hover{
+background:#e8d7f1;
+}
+
+/* SUBMENU */
+
+nav ul li ul{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background:#ffc8dd;
+min-width:180px;
+z-index:1000;
+}
+
+nav ul li ul li a{
+padding:12px;
+}
+
+nav ul li ul li a:hover{
+background:#ffafcc;
+}
+
+nav ul li:hover ul{
+display:block;
+}
+
+/* CONTENIDO */
+
+.header{
+text-align:center;
+padding:60px 20px;
+}
+
+/* IMAGEN */
+
+.hero-img{
+width:100%;
+max-height:500px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* TABLET */
+@media (max-width:768px){
+
+.titulo-principal h1{
+font-size:22px;
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+nav ul li{
+width:100%;
+text-align:center;
+}
+
+nav ul li ul{
+position:static;
+width:100%;
+}
+
+nav ul li a{
+padding:15px;
+}
+
+.hero-img{
+max-height:350px;
+}
+
+}
+
+/* CELULAR */
+@media (max-width:480px){
+
+.titulo-principal h1{
+font-size:18px;
+}
+
+nav ul li a{
+font-size:15px;
+padding:12px;
+}
+
+.header{
+padding:40px 15px;
+}
+
+.hero-img{
+max-height:250px;
+border-radius:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="titulo-principal">
+  <h1>Mi experiencia escolar puede mejorar la tuya</h1>
+</div>
+
+<nav>
 <ul>
-<li><a href="sub1.html">Ver más</a></li>
+
+<li>
+<a href="menu1.html">Abandono escolar</a>
+<ul>
+<li><a href="menu1.html">Ver información</a></li>
 </ul>
 </li>
 
 <li>
 <a href="menu2.html">Consecuencias</a>
 <ul>
-<li><a href="sub2.html">Ver más</a></li>
+<li><a href="menu2.html">Ver información</a></li>
 </ul>
 </li>
 
 <li>
-<a href="menu3.html">Testimonios</a>
+<a href="menu3.html">Permanencia</a>
 <ul>
-<li><a href="sub3.html">Ver más</a></li>
+<li><a href="menu3.html">Ver información</a></li>
 </ul>
 </li>
 
 <li>
 <a href="menu4.html">Prevención</a>
 <ul>
-<li><a href="sub4.html">Ver más</a></li>
+<li><a href="menu4.html">Ver información</a></li>
 </ul>
 </li>
 
 <li>
 <a href="menu5.html">Familia y escuela</a>
 <ul>
-<li><a href="sub5.html">Ver más</a></li>
+<li><a href="menu5.html">Ver información</a></li>
 </ul>
 </li>
 
 <li>
 <a href="menu6.html">Recursos</a>
 <ul>
-<li><a href="sub6.html">Ver más</a></li>
+<li><a href="menu6.html">Ver información</a></li>
 </ul>
 </li>
+
+</ul>
+</nav>
+
+<div class="header">
+
+<img src="princi.jpeg" alt="" class="hero-img">
+
+</div>
+
+</body>
+</html>
