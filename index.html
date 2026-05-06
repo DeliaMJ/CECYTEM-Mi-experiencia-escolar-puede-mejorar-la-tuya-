@@ -20,7 +20,7 @@ background:#fff1f8;
 overflow-x:hidden;
 }
 
-/* TITULO ARRIBA (COMBINADO CON MENU) */
+/* TITULO */
 
 .titulo-principal{
 background:#cdb4db;
@@ -33,14 +33,14 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 margin:0;
 color:#4a3f55;
 font-size:26px;
-font-weight:bold;
 }
 
-/* MENU PRINCIPAL */
+/* MENU */
 
 nav{
 background:#cdb4db;
 border-top:1px solid #bfa6d6;
+margin:0;
 }
 
 nav ul{
@@ -62,107 +62,42 @@ padding:25px 28px;
 color:#4a3f55;
 text-decoration:none;
 font-weight:bold;
-font-size:16px;
 }
 
 nav ul li a:hover{
 background:#e8d7f1;
 }
 
-/* SUBMENU */
-
-nav ul li ul{
-display:none;
-position:absolute;
-top:100%;
-left:0;
-background:#ffc8dd;
-min-width:180px;
-z-index:1000;
-}
-
-nav ul li ul li a{
-padding:12px;
-}
-
-nav ul li ul li a:hover{
-background:#ffafcc;
-}
-
-nav ul li:hover ul{
-display:block;
-}
-
-/* CONTENIDO */
+/* HEADER (PEGADO ARRIBA) */
 
 .header{
-text-align:center;
-padding:60px 20px;
+width:100%;
+height:100vh;
+margin:0;
+padding:0;
 }
 
 /* IMAGEN */
 
 .hero-img{
 width:100%;
-max-height:500px;
+height:100%;
 object-fit:cover;
-border-radius:10px;
-margin-bottom:20px;
+display:block;
 }
 
-/* TABLET */
+/* RESPONSIVE */
+
 @media (max-width:768px){
-
-.titulo-principal h1{
-font-size:22px;
-}
-
-nav ul{
-flex-direction:column;
-align-items:center;
-}
-
-nav ul li{
-width:100%;
-text-align:center;
-}
-
-nav ul li ul{
-position:static;
-width:100%;
-}
-
-nav ul li a{
-padding:15px;
-}
-
-.hero-img{
-max-height:350px;
-}
-
-}
-
-/* CELULAR */
-@media (max-width:480px){
-
-.titulo-principal h1{
-font-size:18px;
-}
-
-nav ul li a{
-font-size:15px;
-padding:12px;
-}
-
 .header{
-padding:40px 15px;
+height:60vh;
+}
 }
 
-.hero-img{
-max-height:250px;
-border-radius:0;
+@media (max-width:480px){
+.header{
+height:50vh;
 }
-
 }
 
 </style>
@@ -172,61 +107,24 @@ border-radius:0;
 <body>
 
 <div class="titulo-principal">
-  <h1>MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUYA</h1>
+<h1>Mi experiencia escolar puede mejorar la tuya</h1>
 </div>
 
 <nav>
 <ul>
 
-<li>
-<a href="menu1.html">Abandono escolar</a>
-<ul>
-<li><a href="menu1.html">Ver información</a></li>
-</ul>
-</li>
-
-<li>
-<a href="menu2.html">Consecuencias</a>
-<ul>
-<li><a href="menu2.html">Ver información</a></li>
-</ul>
-</li>
-
-<li>
-<a href="menu3.html">Permanencia</a>
-<ul>
-<li><a href="menu3.html">Ver información</a></li>
-</ul>
-</li>
-
-<li>
-<a href="menu4.html">Prevención</a>
-<ul>
-<li><a href="menu4.html">Ver información</a></li>
-</ul>
-</li>
-
-<li>
-<a href="menu5.html">Familia y escuela</a>
-<ul>
-<li><a href="menu5.html">Ver información</a></li>
-</ul>
-</li>
-
-<li>
-<a href="menu6.html">Recursos</a>
-<ul>
-<li><a href="menu6.html">Ver información</a></li>
-</ul>
-</li>
+<li><a href="menu1.html">Abandono escolar</a></li>
+<li><a href="menu2.html">Consecuencias</a></li>
+<li><a href="menu3.html">Permanencia</a></li>
+<li><a href="menu4.html">Prevención</a></li>
+<li><a href="menu5.html">Familia y escuela</a></li>
+<li><a href="menu6.html">Recursos</a></li>
 
 </ul>
 </nav>
 
 <div class="header">
-
-<img src="princi.jpeg" alt="" class="hero-img">
-
+<img src="princi.jpeg" class="hero-img">
 </div>
 
 </body>
